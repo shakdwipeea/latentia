@@ -1,4 +1,6 @@
-import spray.routing.HttpService
+package in.viands
+
+import spray.routing.{HttpServiceActor, HttpService}
 
 /**
  * Created by akash on 16/6/15.

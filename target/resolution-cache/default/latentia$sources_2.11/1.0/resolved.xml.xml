@@ -4,7 +4,7 @@
 		module="latentia$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20150615233043"
+		publication="20150617003806"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

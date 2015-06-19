@@ -36,5 +36,10 @@
     <orderEntry type="library" name="SBT: org.parboiled:parboiled-core:1.1.7:jar" level="project" />
     <orderEntry type="library" name="SBT: org.parboiled:parboiled-scala_2.11:1.1.7:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.codahale.metrics:metrics-core:3.0.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.datastax.cassandra:cassandra-driver-core:2.1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.google.guava:guava:16.0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.netty:netty:3.9.0.Final:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.7.5:jar" level="project" />
   </component>
 </module>

@@ -4,7 +4,7 @@
 		module="latentia_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20150615233038"
+		publication="20150619143206"
 	>
 		<description>
 		latentia
@@ -27,11 +27,16 @@
 	</configurations>
 	<publications>
 		<artifact name="latentia_2.11" type="pom" ext="pom" conf="pom"/>
-		<artifact name="latentia_2.11" type="jar" ext="jar" conf="optional" e:classifier="download, resolveClassifiers, resolveSbtClassifiers"/>
+		<artifact name="latentia_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="latentia_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="latentia_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.6" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.6" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="com.datastax.cassandra" name="cassandra-driver-core" rev="2.1.1" conf="compile->default(compile)">
+			<exclude org="org.xerial.snappy" module="snappy-java" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="io.spray" name="spray-can_2.11" rev="1.3.3" conf="compile->default(compile)"/>
 		<dependency org="io.spray" name="spray-routing_2.11" rev="1.3.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.3.9" conf="compile->default(compile)"/>
